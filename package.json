@@ -1,0 +1,21 @@
+{
+  "name": "svggradientoverlay",
+  "version": "0.0.1",
+  "description": "Using svg filter functions with javascript and html. uses sass and browser-sync or maybe switching to parcel, and straight up custom properties",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "npm run start & sass --watch app/scss/index.scss app/css/index.css"
+  },
+  "keywords": [
+    "svg",
+    "javascript",
+    "html"
+  ],
+  "author": "r. galvez",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
+  }
+}

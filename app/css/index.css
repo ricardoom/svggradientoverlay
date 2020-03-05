@@ -1,0 +1,46 @@
+:root {
+  font-size: 16px;
+}
+
+html,
+body,
+svg {
+  height: 100%;
+}
+
+body {
+  padding: 10ex;
+}
+
+.parent {
+  background-color: #ebebeb;
+  /*   margin: 5%; */
+  padding: 5%;
+  height: 600px;
+  width: 600px;
+}
+
+.cont {
+  position: relative;
+}
+
+.item {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  mask: url(#theMask);
+  top: 0;
+  filter: url(#duotone);
+}
+
+.overlay {
+  filter: opacity(0.5);
+  /*   box-shadow: 8px 8px 20px 10px hsla(0, 0%, 80%, 1); */
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
