@@ -4,20 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/index.css" />
-    <title>Document</title>
+    <title>Circle Gradients and grids</title>
   </head>
 
   <body>
     <div class="parent">
-      <div class="cont">
-        <img class="item" src="https://i.picsum.photos/id/456/800/800.jpg" />
-        <svg
+      <div class="container">
+        <img class="image" src="https://i.picsum.photos/id/136/400/400.jpg" />
+        <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
           class="overlay"
           viewBox="0 0 600 600"
         >
           <use href="#bigSquare" x="0" y="0"></use>
-        </svg>
+        </svg> -->
+      </div>
+      <div class="container">
+        <img class="image" src="https://i.picsum.photos/id/965/600/600.jpg" />
+        <!-- <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="overlay"
+          viewBox="0 0 600 600"
+        >
+          <use href="#bigSquare" x="0" y="0"></use>
+        </svg> -->
+      </div>
+      <div class="container">
+        <img class="image" src="https://i.picsum.photos/id/406/400/400.jpg" />
+        <!-- <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="overlay"
+          viewBox="0 0 600 600"
+        >
+          <use href="#bigSquare" x="0" y="0"></use>
+        </svg> -->
+      </div>
+      <div class="container">
+        <img class="image" src="https://i.picsum.photos/id/890/400/400.jpg" />
+        <!-- <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="overlay"
+          viewBox="0 0 600 600"
+        >
+          <use href="#bigSquare" x="0" y="0"></use>
+        </svg> -->
       </div>
     </div>
     <svg
@@ -29,7 +59,8 @@
         <!-- Grab the SourceGraphic (implicit) and convert it to grayscale -->
         <feColorMatrix
           type="matrix"
-          values=".33 .33 .33 0 0
+          values="
+          .33 .33 .33 0 0
           .33 .33 .33 0 0
           .33 .33 .33 0 0
           0 0 0 1 0"
@@ -65,8 +96,8 @@
         <circle cx="5" cy="5" r="4" fill="url('#myOtherGradient')" />
         <rect
           id="bigSquare"
-          height="600"
-          width="600"
+          height="400"
+          width="400"
           fill="url('#myGradient')"
         />
       </defs>
