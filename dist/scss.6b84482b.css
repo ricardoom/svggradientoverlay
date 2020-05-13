@@ -1,0 +1,65 @@
+:root {
+  --rootFontSize: 16px;
+  --green: hsla(155, 81%, 61%, 0.904);
+  --white: hsla(0, 100%, 100%, 1);
+  --seaFoamGreen: hsl(167, 100%, 88%);
+  --brightYellow: hsl(54, 100%, 85%);
+  --almostBlack: hsl(0, 0%, 14%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Playfair Display", serif;
+  font-size: var(--rootFontSize);
+}
+
+body {
+  padding: 5ex;
+}
+
+.parent {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(autofit, minmax(600px, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.container {
+  background-color: var(--white);
+}
+.container h1 {
+  font-family: "Oswald", sans-serif;
+}
+.container:nth-child(11n+1) {
+  background-color: var(--seaFoamGreen);
+  grid-column: 1/-1;
+}
+.container:nth-child(7n+2) {
+  background-color: var(--brightYellow);
+  grid-column: -3/-1;
+}
+.container:nth-child(7n+10) {
+  background-color: var(--almostBlack);
+  grid-column: -1/-2;
+}
+
+.image,
+.image-svg {
+  filter: url(#duotone);
+  mask: url(#theMask);
+  z-index: 1;
+}
+
+.image-svg {
+  mask: none;
+}
+
+.overlay {
+  filter: opacity(0.5);
+}
+
+/*# sourceMappingURL=/scss.6b84482b.css.map */

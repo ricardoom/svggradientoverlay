@@ -1,5 +1,19 @@
 :root {
-  font-size: 16px;
+  --rootFontSize: 16px;
+  --green: hsla(155, 81%, 61%, 0.904);
+  --white: hsla(0, 100%, 100%, 1);
+  --seaFoamGreen: hsl(167, 100%, 88%);
+  --brightYellow: hsl(54, 100%, 85%);
+  --almostBlack: hsl(0, 0%, 14%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Playfair Display', serif;  
+  font-size: var(--rootFontSize);
 }
 
 html,
@@ -14,7 +28,7 @@ body {
 
 .parent {
   display: grid;
-  grid-auto-flow: row dense;
+  grid-auto-flow: dense;
   grid-template-columns: repeat(autofit, minmax(600px, 1fr));
   // grid-template-rows: repeat(3, minmax(600px, 1fr));
   grid-column-gap: 1rem;
@@ -28,25 +42,39 @@ body {
 //   grid-row: auto / span 1;
 // }
 .container {
+  background-color: var(--white);
+  
+  h1 {
+    font-family: 'Oswald', sans-serif;
+  }
   &:nth-child(11n + 1) {
+    background-color: var(--seaFoamGreen);
     grid-column: 1 / -1;
   }
 
   &:nth-child(7n + 2) {
+    background-color: var(--brightYellow);
     grid-column: -3 / -1;
   }
 
   &:nth-child(7n + 10) {
+    background-color: var(--almostBlack);
     grid-column: -1 / -2;
   }
 }
 
-.image {
+.image,
+.image-svg {
   filter: url(#duotone);
   // height: 600px;
   mask: url(#theMask);
   // width: 600px;
   z-index: 1;
+}
+
+// do similar work but via the 
+.image-svg {
+  mask: none;
 }
 
 .overlay {

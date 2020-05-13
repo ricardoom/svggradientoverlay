@@ -1,0 +1,40 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  padding: 5ex;
+}
+
+.parent {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-columns: repeat(autofit, minmax(600px, 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.container:nth-child(11n+1) {
+  grid-column: 1/-1;
+}
+.container:nth-child(7n+2) {
+  grid-column: -3/-1;
+}
+.container:nth-child(7n+10) {
+  grid-column: -1/-2;
+}
+
+.image {
+  filter: url(#duotone);
+  mask: url(#theMask);
+  z-index: 1;
+}
+
+.overlay {
+  filter: opacity(0.5);
+}
+
+
+
+
+/*# sourceMappingURL=/css.967bad95.css.map */

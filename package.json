@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "npm run start & sass --watch app/scss/index.scss app/css/index.css"
+    "dev": "npm run start & sass --watch app/scss/index.scss app/css/index.css",
+    "p": "parcel app/index.html"
   },
   "keywords": [
     "svg",
@@ -16,6 +17,10 @@
   "author": "r. galvez",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "sass": "^1.26.5"
+  },
+  "dependencies": {
+    "colorable": "^1.0.5"
   }
 }

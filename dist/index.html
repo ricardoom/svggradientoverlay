@@ -2,27 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Oswald:wght@293;469&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./scss/index.scss" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@293;469&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/scss.6b84482b.css">
   <title>Circle Gradients and grids</title>
-</head>
+<script src="/scss.6b84482b.js"></script></head>
 
 <body>
   <div class="parent">
     <div class="container">
       <h1><span>Project</span> of projects...</h1>
       <svg xmlns="http://www.w3.org/2000/svg" class="overlay" viewBox="0 0 400 400">
-        <image class="image-svg" clip-path="url(#shining-path)" xlink:href="https://i.picsum.photos/id/799/400/400.jpg"
-          x="0" y="0" height="400" width="400" />
+        <image class="image-svg" clip-path="url(#shining-path)" xlink:href="https://i.picsum.photos/id/799/400/400.jpg" x="0" y="0" height="400" width="400"></image>
       </svg>
     </div>
     <div class="container">
 
-      <img class="image" src="https://i.picsum.photos/id/136/400/400.jpg" height="400" width="400" />
+      <img class="image" src="https://i.picsum.photos/id/136/400/400.jpg" height="400" width="400">
       <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
           class="overlay"
@@ -47,7 +44,7 @@
     <div class="container">
       <p>A challenge I keep running up against is scaling SVGs. Seems counterintuitive since the first word in SVG is
         Scalable...</p>
-      <img class="image" src="https://i.picsum.photos/id/905/600/600.jpg" height="600" width="600" />
+      <img class="image" src="https://i.picsum.photos/id/905/600/600.jpg" height="600" width="600">
       <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
           class="overlay"
@@ -58,7 +55,7 @@
 
     </div>
     <div class="container">
-      <img class="image" src="https://i.picsum.photos/id/406/400/400.jpg" height="400" width="400" />
+      <img class="image" src="https://i.picsum.photos/id/406/400/400.jpg" height="400" width="400">
       <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
           class="overlay"
@@ -69,7 +66,7 @@
       <p>Fu parte che sí nella oportune in uomini impetrata cose. Sua di.</p>
     </div>
     <div class="container">
-      <img class="image" src="https://i.picsum.photos/id/700/400/400.jpg" height="400" width="400" />
+      <img class="image" src="https://i.picsum.photos/id/700/400/400.jpg" height="400" width="400">
       <!-- <svg
           xmlns="http://www.w3.org/2000/svg"
           class="overlay"
@@ -80,14 +77,13 @@
     </div>
     <div class="container">
       <svg xmlns="http://www.w3.org/2000/svg" class="overlay" viewBox="0 0 400 400">
-        <image class="image-svg" clip-path="url(#shining-path)" xlink:href="https://i.picsum.photos/id/111/400/400.jpg"
-          x="0" y="0" height="400" width="400" />
+        <image class="image-svg" clip-path="url(#shining-path)" xlink:href="https://i.picsum.photos/id/111/400/400.jpg" x="0" y="0" height="400" width="400"></image>
       </svg>
       <p>For an example use the svg clip-path attribute on the svg image element. Chrome / Safari do not like using svg
         sourced masks via CSS on non-svg elements... apparently. Though the documentation is a bit opaque.</p>
     </div>
   </div>
-  </div>
+  
   <svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <filter id="duotone">
       <!-- Grab the SourceGraphic (implicit) and convert it to grayscale -->
@@ -106,24 +102,24 @@
     </filter>
     <defs>
       <mask id="theMask" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse">
-        <circle cx="300" cy="300" r="300" fill="url('#myOtherGradient')" />
+        <circle cx="300" cy="300" r="300" fill="url('#myOtherGradient')"></circle>
       </mask>
 
       <linearGradient id="myGradient" gradientTransform="rotate(30)">
-        <stop offset="2%" stop-color="red" stop-opacity="35%" />
-        <stop offset="65%" stop-color="blue" stop-opacity="25%" />
-        <stop offset="100%" stop-color="green" stop-opacity="35%" />
+        <stop offset="2%" stop-color="red" stop-opacity="35%"></stop>
+        <stop offset="65%" stop-color="blue" stop-opacity="25%"></stop>
+        <stop offset="100%" stop-color="green" stop-opacity="35%"></stop>
       </linearGradient>
 
       <linearGradient id="myOtherGradient" gradientTransform="rotate(45)">
-        <stop offset="0%" stop-color="#000" stop-opacity="100%" />
-        <stop offset="100%" stop-color="#fff" stop-opacity="100%" />
+        <stop offset="0%" stop-color="#000" stop-opacity="100%"></stop>
+        <stop offset="100%" stop-color="#fff" stop-opacity="100%"></stop>
       </linearGradient>
 
-      <circle cx="5" cy="5" r="4" fill="url('#myOtherGradient')" />
-      <rect id="bigSquare" height="400" width="400" fill="url('#myGradient')" />
+      <circle cx="5" cy="5" r="4" fill="url('#myOtherGradient')"></circle>
+      <rect id="bigSquare" height="400" width="400" fill="url('#myGradient')"></rect>
       <clipPath id="shining-path">
-        <circle cx="200" cy="200" r="200" fill="gold" id="circle" />
+        <circle cx="200" cy="200" r="200" fill="gold" id="circle"></circle>
       </clipPath>
     </defs>
 
@@ -131,6 +127,6 @@
     <!-- <circle cx="5" cy="5" r="200" fill="url('#myGradient')" />  -->
   </svg>
 </body>
-<script src="index.js"></script>
+<script src="/app.e31bb0bc.js"></script>
 
 </html>
